@@ -15,12 +15,14 @@ StealthYield solves this by enabling yield farmers to privately declare their po
 Zcash Shielded Privacy: Utilizes zk-SNARKs technology to secure and anonymize transactions and balances, guaranteeing absolute privacy.
 NEAR Intent-driven Smart Contracts: Users express private yield-intents securely, which are automatically executed without exposing sensitive information.
 AI-Powered Yield Optimization: Autonomous agents intelligently allocate and manage assets across yield platforms, achieving optimized returns aligned with user-defined targets.
+
 🛠️ Technical Overview
 
 Solidity smart contracts deployed on NEAR’s Ethereum-compatible Aurora platform, capturing user yield intents privately.
 Python-based AI optimization agents autonomously managing yield strategies.
 Comprehensive privacy integrations using Zcash SDK/APIs for transaction confidentiality.
 Robust testing, security audits, and performance validation to ensure reliability.
+
 🔒 Privacy and Security
 
 StealthYield elevates financial privacy, ensuring that users’ financial strategies and identities remain confidential at every step. Transactions are verifiably secure, anonymized through Zcash’s advanced cryptography.
