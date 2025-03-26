@@ -23,6 +23,28 @@ Python-based AI optimization agents autonomously managing yield strategies.
 Comprehensive privacy integrations using Zcash SDK/APIs for transaction confidentiality.
 Robust testing, security audits, and performance validation to ensure reliability.
 
+
+   ┌─────────────┐        Yield Intent (private)       ┌───────────────────┐
+   │             │ ──────────────────────────────────► │ NEAR/Aurora       │
+   │    User     │                                    │ Smart Contract    │
+   │             │ ◄────────────────────────────────── │ (StealthYieldIntent)
+   └─────────────┘         Confirmation                └─────────┬─────────┘
+                                                                │
+                                                                │ Event Trigger
+                                                                ▼
+                                                     ┌───────────────────┐
+                                                     │ AI Yield Optimizer│
+                                                     │ (Python Agent)    │
+                                                     └─────────┬─────────┘
+                                                               │
+                                                               │ Shielded TX (private)
+                                                               ▼
+                                                     ┌───────────────────┐
+                                                     │   Zcash Privacy   │
+                                                     │  (zk-SNARK Layer) │
+                                                     └───────────────────┘
+
+
 🔒 Privacy and Security
 
 StealthYield elevates financial privacy, ensuring that users’ financial strategies and identities remain confidential at every step. Transactions are verifiably secure, anonymized through Zcash’s advanced cryptography.
