@@ -22,27 +22,8 @@ Solidity smart contracts deployed on NEAR’s Ethereum-compatible Aurora platfor
 Python-based AI optimization agents autonomously managing yield strategies.
 Comprehensive privacy integrations using Zcash SDK/APIs for transaction confidentiality.
 Robust testing, security audits, and performance validation to ensure reliability.
+![image](https://github.com/user-attachments/assets/bbfeff0b-cdc9-40ec-933b-86f28ec351a7)
 
-
-   ┌─────────────┐        Yield Intent (private)       ┌───────────────────┐
-   │             │ ──────────────────────────────────► │ NEAR/Aurora       │
-   │    User     │                                    │ Smart Contract    │
-   │             │ ◄────────────────────────────────── │ (StealthYieldIntent)
-   └─────────────┘         Confirmation                └─────────┬─────────┘
-                                                                │
-                                                                │ Event Trigger
-                                                                ▼
-                                                     ┌───────────────────┐
-                                                     │ AI Yield Optimizer│
-                                                     │ (Python Agent)    │
-                                                     └─────────┬─────────┘
-                                                               │
-                                                               │ Shielded TX (private)
-                                                               ▼
-                                                     ┌───────────────────┐
-                                                     │   Zcash Privacy   │
-                                                     │  (zk-SNARK Layer) │
-                                                     └───────────────────┘
 
 
 🔒 Privacy and Security
