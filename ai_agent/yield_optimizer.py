@@ -1,21 +1,16 @@
-import random
 import time
+import random
 
-class YieldOptimizerAgent:
-    def __init__(self, user_intent):
-        self.user = user_intent['user']
-        self.yield_target = user_intent['yieldTarget'] / 10000  # Convert from basis points
+class SimpleYieldOptimizer:
+    def __init__(self, target_yield):
+        self.target_yield = target_yield / 10000  # Convert basis points
         self.current_yield = 0.0
 
-    def optimize_portfolio(self):
-        print(f"[INFO] Optimizing yield for {self.user}")
-        while self.current_yield < self.yield_target:
-            self.execute_strategy()
-            time.sleep(1)  # Simulate time delay
+    def optimize(self):
+        print(f"Starting optimization for yield target: {self.target_yield*100:.2f}%")
+        while self.current_yield < self.target_yield:
+            self.current_yield += random.uniform(0.005, 0.015)  # Random yield increment
+            print(f"Optimizing... Current yield: {self.current_yield*100:.2f}%")
+            time.sleep(1)  # simulate processing delay
 
-        print(f"[SUCCESS] Yield target achieved for {self.user}: {self.current_yield*100:.2f}%")
-
-    def execute_strategy(self):
-        yield_gained = random.uniform(0.005, 0.015)  # Randomized for demo
-        self.current_yield += yield_gained
-        print(f"[EXECUTED] Yield improved by {yield_gained*100:.2f}%, Total: {self.current_yield*100:.2f}%")
+        print("Yield target achieved!")
